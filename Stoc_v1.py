@@ -183,7 +183,7 @@ class StartPage(tk.Frame):
         cale_exp = tk.Entry(self,width=20, bg='ghostwhite', borderwidth=0.5)
         cale_exp.place(x=720,y=170)
         cale_exp.config(font=11)
-        cale_exp.insert(tk.END, '/home/marius/test.csv')
+        cale_exp.insert(tk.END, '/home/test/test.csv')
 
         style = ttk.Style()
         style.configure("mystyle.Treeview", highlightthickness=1, bd=1, font=('Calibri', 12))
@@ -266,9 +266,9 @@ class StartPage(tk.Frame):
                     tk.messagebox.showinfo("Eroare", "Introduceti criteriul de cautare", icon='warning')
                 elif comboBox.get() == 'Model' and data != '':
                     mydb = mysql.connector.connect(
-                        host = "192.168.10.59",
-                        user = "marius",
-                        passwd = "Mazdarx8@",
+                        host = "192.168.1.3",
+                        user = "test",
+                        passwd = "pswd",
                         database = "stocdb",
                         )
                     my_cursor = mydb.cursor()
@@ -283,9 +283,9 @@ class StartPage(tk.Frame):
                     mydb.close()
                 elif comboBox.get() == 'Serie' and data != '':
                     mydb = mysql.connector.connect(
-                        host = "192.168.10.59",
-                        user = "marius",
-                        passwd = "Mazdarx8@",
+                        host = "192.168.1.3",
+                        user = "test",
+                        passwd = "pswd",
                         database = "stocdb",
                         )
                     my_cursor = mydb.cursor()
@@ -300,9 +300,9 @@ class StartPage(tk.Frame):
                     mydb.close()
                 elif comboBox.get() == 'Data Intrare' and data != '':
                     mydb = mysql.connector.connect(
-                        host = "192.168.10.59",
-                        user = "marius",
-                        passwd = "Mazdarx8@",
+                        host = "192.168.1.3",
+                        user = "test",
+                        passwd = "pswd",
                         #auth_plugin = "mysql_native_password",
                         database = "stocdb",
                         )
@@ -318,9 +318,9 @@ class StartPage(tk.Frame):
                     mydb.close()
                 elif comboBox.get() == 'Client' and data != '':
                     mydb = mysql.connector.connect(
-                        host = "192.168.10.59",
-                        user = "marius",
-                        passwd = "Mazdarx8@",
+                        host = "192.168.1.3",
+                        user = "test",
+                        passwd = "pswd",
                         #auth_plugin = "mysql_native_password",
                         database = "stocdb",
                         )
@@ -336,9 +336,9 @@ class StartPage(tk.Frame):
                     mydb.close()
                 elif comboBox.get() == 'Data Intrare' and data != '':
                     mydb = mysql.connector.connect(
-                        host = "192.168.10.59",
-                        user = "marius",
-                        passwd = "Mazdarx8@",
+                        host = "192.168.1.3",
+                        user = "test",
+                        passwd = "pswd",
                         #auth_plugin = "mysql_native_password",
                         database = "stocdb",
                         )
@@ -354,9 +354,9 @@ class StartPage(tk.Frame):
                     mydb.close()
                 elif comboBox.get() == 'Tip Iesire' and data != '':
                     mydb = mysql.connector.connect(
-                        host = "192.168.10.59",
-                        user = "marius",
-                        passwd = "Mazdarx8@",
+                        host = "192.168.1.3",
+                        user = "test",
+                        passwd = "pswd",
                         #auth_plugin = "mysql_native_password",
                         database = "stocdb",
                         )
@@ -376,9 +376,9 @@ class StartPage(tk.Frame):
         def getAll():
             try:
                 mydb = mysql.connector.connect(
-                    host = "192.168.10.59",
-                    user = "marius",
-                    passwd = "Mazdarx8@",
+                    host = "192.168.1.3",
+                    user = "test",
+                    passwd = "pswd",
                     database = "stocdb",
                     #auth_plugin = "mysql_native_password",
                     )
@@ -398,9 +398,9 @@ class StartPage(tk.Frame):
             try:
                 if data_out.get() == '' and clientid.get() == '' and tip_iesire.get() == '' and obs.get() == '':
                     mydb = mysql.connector.connect(
-                        host = "192.168.10.59",
-                        user = "marius",
-                        passwd = "Mazdarx8@",
+                        host = "192.168.1.3",
+                        user = "test",
+                        passwd = "pswd",
                         database = "stocdb",
                         #auth_plugin = "mysql_native_password",
                         )
@@ -424,9 +424,9 @@ class StartPage(tk.Frame):
                     tk.messagebox.showinfo("", "Inregistrarile au fost salvate!", icon='info')
                 elif data_out.get() == '' and tip_iesire.get() == '':
                     mydb = mysql.connector.connect(
-                        host = "192.168.10.59",
-                        user = "marius",
-                        passwd = "Mazdarx8@",
+                        host = "192.168.1.3",
+                        user = "test",
+                        passwd = "pswd",
                         database = "stocdb",
                         #auth_plugin = "mysql_native_password",
                         )
@@ -447,9 +447,9 @@ class StartPage(tk.Frame):
                     tk.messagebox.showinfo("", "Inregistrarile au fost salvate!", icon='info')
                 elif data_out.get() == '' and clientid.get() == '' and tip_iesire.get() == '':
                     mydb = mysql.connector.connect(
-                        host = "192.168.10.59",
-                        user = "marius",
-                        passwd = "Mazdarx8@",
+                        host = "192.168.1.3",
+                        user = "test",
+                        passwd = "pswd",
                         database = "stocdb",
                         #auth_plugin = "mysql_native_password",
                         )
@@ -469,9 +469,9 @@ class StartPage(tk.Frame):
                     tk.messagebox.showinfo("", "Inregistrarile au fost salvate!", icon='info')
                 elif tip_iesire.get() == '' and obs.get() == '':
                     mydb = mysql.connector.connect(
-                        host = "192.168.10.59",
-                        user = "marius",
-                        passwd = "Mazdarx8@",
+                        host = "192.168.1.3",
+                        user = "test",
+                        passwd = "pswd",
                         database = "stocdb",
                         #auth_plugin = "mysql_native_password",
                         )
@@ -492,9 +492,9 @@ class StartPage(tk.Frame):
                     tk.messagebox.showinfo("", "Inregistrarile au fost salvate!", icon='info')
                 elif obs.get() == '':
                     mydb = mysql.connector.connect(
-                        host = "192.168.10.59",
-                        user = "marius",
-                        passwd = "Mazdarx8@",
+                        host = "192.168.1.3",
+                        user = "test",
+                        passwd = "pswd",
                         database = "stocdb",
                         #auth_plugin = "mysql_native_password",
                         )
@@ -516,9 +516,9 @@ class StartPage(tk.Frame):
                     tk.messagebox.showinfo("", "Inregistrarile au fost salvate!", icon='info')
                 elif tip_iesire.get() == '':
                     mydb = mysql.connector.connect(
-                        host = "192.168.10.59",
-                        user = "marius",
-                        passwd = "Mazdarx8@",
+                        host = "192.168.1.3",
+                        user = "test",
+                        passwd = "pswd",
                         database = "stocdb",
                         #auth_plugin = "mysql_native_password",
                         )
@@ -541,9 +541,9 @@ class StartPage(tk.Frame):
                     tk.messagebox.showinfo("", "Inregistrarile au fost salvate!", icon='info')
                 elif data_out.get() == '' and obs.get() == '':
                     mydb = mysql.connector.connect(
-                        host = "192.168.10.59",
-                        user = "marius",
-                        passwd = "Mazdarx8@",
+                        host = "192.168.1.3",
+                        user = "test",
+                        passwd = "pswd",
                         database = "stocdb",
                         #auth_plugin = "mysql_native_password",
                         )
@@ -568,9 +568,9 @@ class StartPage(tk.Frame):
                     tk.messagebox.showinfo("", "Inregistrarile au fost salvate!", icon='info')
                 else :
                     mydb = mysql.connector.connect(
-                        host = "192.168.10.59",
-                        user = "marius",
-                        passwd = "Mazdarx8@",
+                        host = "192.168.1.3",
+                        user = "test",
+                        passwd = "pswd",
                         database = "stocdb",
                         #auth_plugin = "mysql_native_password",
                         )
@@ -620,9 +620,9 @@ class StartPage(tk.Frame):
                         tk.messagebox.showinfo("Eroare", "Completati Producator!!", icon='warning')
                     elif data_out.get() == '':
                         mydb = mysql.connector.connect(
-                            host = "192.168.10.59",
-                            user = "marius",
-                            passwd = "Mazdarx8@",
+                            host = "192.168.1.3",
+                            user = "test",
+                            passwd = "pswd",
                             database = "stocdb",
                             #auth_plugin = "mysql_native_password",
                             )
@@ -642,9 +642,9 @@ class StartPage(tk.Frame):
                         tk.messagebox.showinfo("", "Inregistrarea a fost modificata!", icon='info')                   
                     else :
                         mydb = mysql.connector.connect(
-                            host = "192.168.10.59",
-                            user = "marius",
-                            passwd = "Mazdarx8@",
+                            host = "192.168.1.3",
+                            user = "test",
+                            passwd = "pswd",
                             database = "stocdb",
                             #auth_plugin = "mysql_native_password",
                             )
@@ -678,9 +678,9 @@ class StartPage(tk.Frame):
                 try:
                     if serie.get() != '':
                         mydb = mysql.connector.connect(
-                            host = "192.168.10.59",
-                            user = "marius",
-                            passwd = "Mazdarx8@",
+                            host = "192.168.1.3",
+                            user = "test",
+                            passwd = "pswd",
                             database = "stocdb",
                             #auth_plugin = "mysql_native_password",
                             )
@@ -709,9 +709,9 @@ class StartPage(tk.Frame):
             
             
             mydb = mysql.connector.connect(
-                        host = "192.168.10.59",
-                        user = "marius",
-                        passwd = "Mazdarx8@",
+                        host = "192.168.1.3",
+                        user = "test",
+                        passwd = "pswd",
                         database = "stocdb",
                         )
             FILE = cale_exp.get()
